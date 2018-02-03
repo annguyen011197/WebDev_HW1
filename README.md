@@ -1,1 +1,3 @@
-# WebDev_HW1
+# Web Development
+## Homework 1
+Team Introduction
