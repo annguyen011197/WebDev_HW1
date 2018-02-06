@@ -6,118 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thông tin thành viên</title>
-    <style>
-        .wrapper {
-            display: flex;
-            position: fixed;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 1em;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            padding: 20px;
-            color: white;
-        }
-
-        .bar {
-            background: linear-gradient(to right, #42b9f4 0%, #2989d8 34%, #2989d8 68%, #207cca 78%, #7db9e8 100%);
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 10%;
-            position: fixed;
-            flex-direction: row;
-            display: flex;
-            align-items: center;
-            z-index: 1;
-            float:top;
-        }
-    
-        .back-button{
-            margin: 10px;
-            text-decoration: none;
-            display: inline-block;
-            padding: 8px 16px;
-            opacity:0.7;
-        }
-        
-        .back-button:hover{
-            opacity:1;
-        }
-        
-        .ava {
-            width: 10em;
-            border-radius: 50%;
-            z-index: 1;
-            position: relative;
-            align-self: center;
-            display: block;
-            margin-left: 120px;
-            top: 90px;
-            border: 2px solid #ddd;
-            padding: 5px;
-            background-color: #ffffff;
-        }
-
-        #info-name{
-            display: block;
-            float:top;
-            position: fixed;
-            font-size: 30px;
-            color:#ffffff;
-            margin-top:115px;
-            margin-left:310px;
-        }
-        
-        #info-mssv{
-            display: block;
-            float:top;
-            position: fixed;
-            font-size: 25px;
-            color:#ffffff;
-            margin-top:150px;
-            margin-left:310px;
-        }
-        
-        .background-gradient{
-            display: block;
-            float:top;
-            position: fixed;
-            font-size: 30px;
-            background: linear-gradient(to top, rgba(0,0,0,0.8),rgba(255,255,255,0), rgba(255,255,255,0));
-            width:100%;
-            height: 180px;
-        }
-        
-        .image_background{
-            object-fit: cover;
-            display: block;
-            height: 180px;
-            width: 100%;
-            max-width: 100%;
-            float:top;
-            position: fixed;
-            
-        }
-        
-        .background_ava {
-            display: block;
-            top:10%;
-            left: 0;
-            height: 180px;
-            width: 100%;
-            float:top;
-            position: fixed;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../../style.css" >
 </head>
 
 <body>
     <div class="wrapper">
         <div class="bar">
             <a href="#" class="back-button"><img src="images/reply.png" alt="return"></a>
-            <h1>Thông tin thành viên</h1>
+            <h1 class="title">Thông tin thành viên</h1>
         </div>
         <div>
             <div class="background_ava">
