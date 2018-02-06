@@ -101,3 +101,11 @@
     float:top;
     position: fixed;
 }
+
+.social{
+    display: block;
+    float:top;
+    position: fixed;
+    margin-left: 310px;
+    margin-top: 10px;
+}
