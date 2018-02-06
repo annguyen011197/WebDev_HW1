@@ -9,6 +9,7 @@
     color: white;
     display: flex;
     align-self: center;
+    margin:auto;
 }
 
 .bar {
@@ -39,21 +40,72 @@
 
 .ava {
     width: 10em;
-    border-radius: 50%;
-    z-index: 2;
+	border-radius: 50%;
+	z-index: 1;
     position: relative;
     align-self: center;
     display: block;
-    margin: 0 auto;
-    top: 5em;
+    margin-left: 120px;
+    top: 90px;
+    border: 2px solid #ddd;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+#info-name{
+    display: block;
+    float:top;
+    position: fixed;
+    font-size: 30px;
+    color:#ffffff;
+    margin-top:115px;
+    margin-left:310px;
+}
+
+#info-mssv{
+    display: block;
+    float:top;
+    position: fixed;
+    font-size: 25px;
+    color:#ffffff;
+    margin-top:150px;
+    margin-left:310px;
+}
+
+.background-gradient{
+    display: block;
+    float:top;
+    position: fixed;
+    font-size: 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(255,255,255,0), rgba(255,255,255,0));
+    width:100%;
+    height: 180px;
+}
+
+.image_background{
+    object-fit: cover;
+    display: block;
+    height: 180px;
+    width: 100%;
+    max-width: 100%;
+    float:top;
+    position: fixed;
 }
 
 .background_ava {
     display: block;
     top:10%;
     left: 0;
-    height: 10em;
+    height: 180px;
     width: 100%;
     float:top;
     position: fixed;
+}
+
+.social{
+    display: block;
+    float:top;
+    position: fixed;
+    margin-left: 310px;
+    margin-top: 10px;
 }
