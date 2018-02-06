@@ -33,44 +33,80 @@
             z-index: 1;
             float:top;
         }
-
-        .back-button {
+    
+        .back-button{
             margin: 10px;
-            width: 15%;
-            background-color: transparent;
-            border-style: hidden
-        }
-
-        .back-button:hover {
-            background: #3cb0fd;
-            background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
             text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+            opacity:0.7;
         }
-
+        
+        .back-button:hover{
+            opacity:1;
+        }
+        
         .ava {
             width: 10em;
             border-radius: 50%;
-            z-index: 2;
+            z-index: 1;
             position: relative;
             align-self: center;
             display: block;
-            margin: 0 auto;
-            top: 5em;
+            margin-left: 120px;
+            top: 90px;
+            border: 2px solid #ddd;
+            padding: 5px;
+            background-color: #ffffff;
         }
 
+        #info-name{
+            display: block;
+            float:top;
+            position: fixed;
+            font-size: 30px;
+            color:#ffffff;
+            margin-top:115px;
+            margin-left:310px;
+        }
+        
+        #info-mssv{
+            display: block;
+            float:top;
+            position: fixed;
+            font-size: 25px;
+            color:#ffffff;
+            margin-top:150px;
+            margin-left:310px;
+        }
+        
+        .background-gradient{
+            display: block;
+            float:top;
+            position: fixed;
+            font-size: 30px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8),rgba(255,255,255,0), rgba(255,255,255,0));
+            width:100%;
+            height: 180px;
+        }
+        
+        .image_background{
+            object-fit: cover;
+            display: block;
+            height: 180px;
+            width: 100%;
+            max-width: 100%;
+            float:top;
+            position: fixed;
+            
+        }
+        
         .background_ava {
             display: block;
             top:10%;
             left: 0;
-            height: 10em;
+            height: 180px;
             width: 100%;
-            background-image: url(http://www.bluelagoon.com/images/new-node/blue-lagoon-nature-3.jpg);
-            background-size: cover;
-            z-index: 1;
             float:top;
             position: fixed;
         }
@@ -80,25 +116,18 @@
 <body>
     <div class="wrapper">
         <div class="bar">
-            <button class="back-button">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 252 252" style="fill:#000000;">
-                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                        style="mix-blend-mode: normal">
-                        <path d="M0,252v-252h252v252z" fill="none"></path>
-                        <g fill="#ffffff">
-                            <g id="surface1">
-                                <path d="M162.2168,225.75l16.2832,-16.2832l-83.46679,-83.4668l83.46679,-83.46679l-16.2832,-16.28321l-99.2168,99.75z"></path>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-            </button>
+            <a href="#" class="back-button"><img src="images/reply.png" alt="return"></a>
             <h1>Thông tin thành viên</h1>
         </div>
         <div>
             <div class="background_ava">
+                    <img class="image_background" src="http://www.bluelagoon.com/images/new-node/blue-lagoon-nature-3.jpg" alt="Ảnh đại diện" >
+                    <div class="background-gradient">
+                        <p id="info-name">Nguyễn Trần Minh Ân</p>
+                        <p id="info-mssv">(1512020)</p>
+                    </div>
                     <img class="ava" src="images/ava.jpg" alt="Ảnh đại diện">
+                    
             </div>
             <div class="Info">
                 <ul>
