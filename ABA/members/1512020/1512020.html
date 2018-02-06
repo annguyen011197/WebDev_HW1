@@ -6,75 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thông tin thành viên</title>
-    <style>
-        .wrapper {
-            display: flex;
-            position: fixed;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 1em;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            padding: 20px;
-            color: white;
-        }
-
-        .bar {
-            background: linear-gradient(to right, #42b9f4 0%, #2989d8 34%, #2989d8 68%, #207cca 78%, #7db9e8 100%);
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 10%;
-            position: fixed;
-            flex-direction: row;
-            display: flex;
-            align-items: center;
-            z-index: 1;
-            float:top;
-        }
-
-        .back-button {
-            margin: 10px;
-            width: 15%;
-            background-color: transparent;
-            border-style: hidden
-        }
-
-        .back-button:hover {
-            background: #3cb0fd;
-            background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-            background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-            text-decoration: none;
-        }
-
-        .ava {
-            width: 10em;
-            border-radius: 50%;
-            z-index: 2;
-            position: relative;
-            align-self: center;
-            display: block;
-            margin: 0 auto;
-            top: 5em;
-        }
-
-        .background_ava {
-            display: block;
-            top:10%;
-            left: 0;
-            height: 10em;
-            width: 100%;
-            background-image: url(http://www.bluelagoon.com/images/new-node/blue-lagoon-nature-3.jpg);
-            background-size: cover;
-            z-index: 1;
-            float:top;
-            position: fixed;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../../style.css" >
 </head>
 
 <body>
@@ -94,7 +26,8 @@
                     </g>
                 </svg>
             </button>
-            <h1>Thông tin thành viên</h1>
+            <h1 class="title">Thông tin thành viên</h1>
+            <div class="space"></div>
         </div>
         <div>
             <div class="background_ava">
