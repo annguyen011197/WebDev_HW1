@@ -41,9 +41,8 @@
 .ava {
     width: 10em;
 	border-radius: 50%;
-	z-index: 1;
+	z-index: 2;
     position: relative;
-    align-self: center;
     display: block;
     margin-left: 120px;
     top: 90px;
@@ -96,45 +95,46 @@
     display: block;
     top:10%;
     left: 0;
-    height: 180px;
+    height: fit-content;
     width: 100%;
-    float:top;
     position: fixed;
 }
 
 .social{
     display: block;
-    float:top;
-    position: fixed;
-    margin-left: 310px;
-    margin-top: 10px;
+    position: relative;
+    margin-left: 180px;
+    padding-top: 20px;
 }
 
 .info_container {
     position: relative;
-    top:35vh;
-    height: auto;
+    height: fit-content;
     left: 0;
-    width: 100%;
+    width: 80%;
     margin: auto;
+    top:39vh;
+    background-color: white;
+    z-index: -1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .info_list {
-    margin: auto;
-    width: fit-content;
-    top: 16vh;
-    min-height: 60vh;
-    max-height: 70vh;
-    min-width: fit-content;
-    height: fit-content;
     position: relative;
     text-align: justify;
     font-size: 1.5em;
+    display: block;
+    margin-top:10px;
+    margin-left: 180px;
+    padding: 0px;
+    padding-bottom: 10px;
+    width: fit-content;
 }
 
 body {
     margin: 0px;
     width: auto;
+    background-color: #f8f8f8
 }
 
 .container {
@@ -143,4 +143,27 @@ body {
 
 ul{
     list-style: none;
+}
+
+.hide_info{
+    font-size: 0;
+}
+
+.info_logo {
+    width: 1em;
+    margin-right: 30px;
+    align-self: center;
+}
+
+.logo {
+    width: 7em;
+    position:relative;
+    margin-top:10px;
+    float: right;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
