@@ -1,6 +1,6 @@
 body{
     width: auto;
-    margin: 0px;
+    margin: -1px;
     padding: 0px;
 }
 
@@ -16,7 +16,7 @@ body{
 
 .bar {
     background: linear-gradient(to right, #42b9f4 0%, #2989d8 34%, #2989d8 68%, #207cca 78%, #7db9e8 100%);
-    width: auto;
+    width: 140%;
     white-space: nowrap;
     height: 40px;
     padding: 30px;
@@ -35,11 +35,9 @@ body{
 .image_background{
     object-fit: cover;
     display: block;
-    width: 100%;
+    width: 145%;
     height: 180px;
 }
-
-
 
 .ava {
     width: 200px;
