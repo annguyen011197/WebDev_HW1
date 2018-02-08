@@ -1,36 +1,30 @@
-.wrapper {
-    display: flex;
-    position: fixed;
-    width: 100%;
+body{
+    width: auto;
+    margin: 0px;
+    padding: 0px;
 }
 
 .title {
-    font-size: 1em;
+    position:absolute;
+    font-size: 1.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    display: flex;
+    font-weight: bold;
+    left: 120px;
+    top: 20px;
 }
 
 .bar {
     background: linear-gradient(to right, #42b9f4 0%, #2989d8 34%, #2989d8 68%, #207cca 78%, #7db9e8 100%);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    position: fixed;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    float:top;
-    justify-content: flex-start;
+    width: auto;
+    white-space: nowrap;
+    height: 40px;
+    padding: 30px;
 }
 
 .back-button {
-    margin: 10px;
     text-decoration: none;
     display: inline-block;
-    padding: 8px 16px;
     opacity:0.7;
 }
 
@@ -38,73 +32,60 @@
     opacity:1;
 }
 
+.image_background{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 180px;
+}
+
+
+
 .ava {
-    width: 10em;
+    width: 200px;
+    position: absolute;
 	border-radius: 50%;
 	z-index: 2;
-    position: relative;
     display: block;
     margin-left: 120px;
-    top: 90px;
     border: 2px solid #ddd;
     padding: 5px;
     background-color: #ffffff;
+    top: 120px;
 }
 
 #info-name{
     display: block;
-    float:top;
-    position: fixed;
-    font-size: 30px;
+    position: absolute;
+    font-size: 25px;
     color:#ffffff;
-    margin-top:115px;
-    margin-left:310px;
+    top: 180px;
+    left:350px;
+    min-width: 100%;
 }
 
 #info-mssv{
     display: block;
-    float:top;
-    position: fixed;
-    font-size: 25px;
+    position: absolute;
+    font-size: 20px;
     color:#ffffff;
-    margin-top:150px;
-    margin-left:310px;
+    top: 220px;
+    left:350px;
 }
 
-.background-gradient{
-    display: block;
-    float:top;
-    position: fixed;
-    font-size: 30px;
-    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(255,255,255,0), rgba(255,255,255,0));
-    width:100%;
-    height: 180px;
+.hide_info{
+    font-size: 0;
 }
 
-.image_background{
-    object-fit: cover;
-    display: block;
-    height: 180px;
-    width: 100%;
-    max-width: 100%;
-    float:top;
-    position: fixed;
+ul{
+    list-style: none;
 }
 
-.background_ava {
-    display: block;
-    top:10%;
-    left: 0;
-    height: fit-content;
-    width: 100%;
-    position: fixed;
-}
-
-.social{
-    display: block;
-    position: relative;
-    margin-left: 180px;
-    padding-top: 20px;
+.info_logo {
+    width: 1em;
+    margin-right: 30px;
+    align-self: center;
+    display: inline-block;
 }
 
 .info_container {
@@ -113,46 +94,34 @@
     left: 0;
     width: 80%;
     margin: auto;
-    top:39vh;
     background-color: white;
     z-index: -1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.social{
+    display: block;
+    position: relative;
+    margin-left: 200px;
+    padding-top: 40px;
 }
 
 .info_list {
     position: relative;
     text-align: justify;
-    font-size: 1.5em;
     display: block;
     margin-top:10px;
-    margin-left: 180px;
+    margin-left: 200px;
     padding: 0px;
     padding-bottom: 10px;
-    width: fit-content;
 }
 
-body {
-    margin: 0px;
-    width: auto;
-    background-color: #f8f8f8
-}
-
-.container {
-    width: 100%;
-}
-
-ul{
-    list-style: none;
-}
-
-.hide_info{
-    font-size: 0;
-}
-
-.info_logo {
-    width: 1em;
-    margin-right: 30px;
-    align-self: center;
+.info p{
+    font-size: 20px;
+    display: inline-block;
+    word-wrap: break-word;
 }
 
 .logo {
@@ -162,8 +131,44 @@ ul{
     float: right;
 }
 
-.info{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+.container {
+    width: 100%;
+}   
+
+@media (max-width: 700px) {
+    .title {
+        font-size: 1em;
+        top:25px;
+        left: 100px;
+    }
+
+    .bar{
+        width: 800px;
+    }
+
+    .image_background{
+        object-fit: cover;
+        display: block;
+        width: 860px;
+        height: 180px;
+    }
+
+    .container{
+        width: 860px;
+    }
+
+    .info_container{
+        min-width: 100%;    
+    }
+
+    .info_list, .social {
+        margin-left: 320px;
+    }
+}
+
+@media (max-width: 580px) {
+    #info-name{
+        top: 150px;
+        left:350px;
+    }
 }
