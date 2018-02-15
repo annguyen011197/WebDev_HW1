@@ -4,6 +4,10 @@ body{
     padding: 0px;
 }
 
+.bg_body{
+    background-color: #3A6377;
+}
+
 .title {
     position:absolute;
     font-size: 1.5em;
@@ -43,7 +47,7 @@ body{
     object-fit: cover;
     display: block;
     width: 100%;
-    height: 480px;
+    height: 380px;
 }
 
 .ava {
@@ -68,7 +72,6 @@ body{
     background-color: #ffffff;
     margin-left: 50px;
     margin-right: 50px;
-    float: left;
 }
 
 .ava_trans{
@@ -80,12 +83,40 @@ body{
     width: 230px;
 }
 
+.div_background_home{
+    width: 100%;
+    height: 380px;
+    display: grid;
+    place-items: center center;
+    position: absolute;
+    margin-top: -440px; 
+}
+
 
 .list_ava {
     position: relative;
     margin-top: -100px;
     display: grid;
     place-items: center center;
+}
+
+#hr1{
+    width: 250px;
+    display: block;
+    margin-top: -140px;
+}
+#hr2{
+    width: 150px;
+    display: block;
+    margin-top: -120px;
+}
+
+
+#title-home{
+    display: block;
+    font-size: 120px;
+    color:#ffffff;
+    max-width: 100%;
 }
 
 #info-name{
@@ -96,6 +127,18 @@ body{
     top: 180px;
     left:350px;
     max-width: 100%;
+}
+
+#info-name-home{
+    display: block;
+    font-size: 25px;
+    color:#ffffff;
+    max-width: 100%;
+    text-align: center;
+}
+
+#float-left{
+    float:left;
 }
 
 #info-mssv{
@@ -120,6 +163,12 @@ ul{
     margin-right: 30px;
     align-self: center;
     display: inline-block;
+}
+
+.info_container_home {
+    position: relative;
+    width:100%;
+    height:500px;
 }
 
 .info_container {
