@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
     position: fixed;
+    width: 100%;
 }
 
 .title {
@@ -8,8 +9,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     display: flex;
-    align-self: center;
-    margin:auto;
 }
 
 .bar {
@@ -24,6 +23,7 @@
     align-items: center;
     z-index: 1;
     float:top;
+    justify-content: flex-start;
 }
 
 .back-button {
@@ -108,4 +108,39 @@
     position: fixed;
     margin-left: 310px;
     margin-top: 10px;
+}
+
+.info_container {
+    position: relative;
+    top:35vh;
+    height: auto;
+    left: 0;
+    width: 100%;
+    margin: auto;
+}
+
+.info_list {
+    margin: auto;
+    width: fit-content;
+    top: 16vh;
+    min-height: 60vh;
+    max-height: 70vh;
+    min-width: fit-content;
+    height: fit-content;
+    position: relative;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+body {
+    margin: 0px;
+    width: auto;
+}
+
+.container {
+    width: 100%;
+}
+
+ul{
+    list-style: none;
 }
